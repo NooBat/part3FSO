@@ -1,0 +1,27 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "\"# part3FSO\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NooBat/part3FSO.git"
+  },
+  "author": "Nguyen Tran Khoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NooBat/part3FSO/issues"
+  },
+  "homepage": "https://github.com/NooBat/part3FSO#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
