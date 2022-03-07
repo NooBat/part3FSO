@@ -1,8 +1,11 @@
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors')
 const app = express()
 
+app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 app.use(morgan((tokens, request, response) => {
   return [
     tokens.method(request, response),
@@ -44,6 +47,10 @@ app.get('/info', (request, response) => {
     <p>${Date()}</p>
   </div>  
   `)
+})
+
+app.get('/', (request, response) => {
+  response.send('<h1>App</h1>')
 })
 
 app.get('/api/persons', (request, response) => {
